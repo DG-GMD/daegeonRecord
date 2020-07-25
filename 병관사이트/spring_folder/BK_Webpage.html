@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text.html; charset=utf-8"/>
+<title> 병관이 비밀공간 </title>
+<style>
+.light {
+	background-color:yellow;
+	font-family:고딕;
+}
+
+</style>
+<script>
+var n=prompt("2의 몇 제곱?");
+var num=2
+for(i=1;i<n;i++)
+	num*=2
+
+document.write(num)
+function LOL(){
+	var Good = new Array();
+	Good[0] = "난 계속 먹을 것이다. -김선식"
+	Good[1] = "저에겐 아무것도 없지만, 당신에게 없는 가오가 있습니다. -윤주식"
+	Good[2] = "내일 세상이 멸망하더라도, 난 딸 한 번을 더 치겠다. -임훈식"
+	Good[3] = "나만의, 나에 의한, 나만을 위한 그많데를 만들겠다. -나재흠"
+	Good[4] = "난 항상 나의 성 정체성을 숨기고 산다. -이동현"
+	Good[5] = "벌레는 아주 좋은 단백질 공급원이죠. -베어 그릴스"
+	var today = new Date();
+	var current = today.getDay();
+	var num2 = current%6;
+	Goodword = Good[num2];
+	document.write(Goodword);
+}
+
+
+
+</script>
+</head>
+<body>
+<h3> 강병관 활동내역 </h3>
+<p>오늘의 명언 : <span class="light"><script>LOL();</script></span> </p>
+
+</body>
+</html>

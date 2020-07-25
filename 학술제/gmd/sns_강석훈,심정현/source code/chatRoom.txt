@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<form>
+	
+		<p><textarea name="개인용" cols="33" rows="10">짓거려봐</textarea></p>
+		
+		<input type="text" size="25">
+		
+		<input type="submit" value="전송">
+		
+	</form>
+	 
+</body>
+</html>

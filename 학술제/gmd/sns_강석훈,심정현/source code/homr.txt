@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	
+	<style type="text/css">
+		
+		li {
+			border:1px solid blue;
+			margin:1em 0em;
+			width:100%;
+			height:200px;
+			list-style:none;
+			radient:1px 20%;
+			border-radius:10px;
+		}
+		
+		li img {
+			float:right;
+			width:20px;
+			}
+	</style>
+	
+</head>
+
+<body>
+
+	<ul>
+		<li>article1 <a href="#yame1"><img alt="#" src="x.jpg"></a> </li>
+		<li>article2 <a href="#yame2" name="yame1"><img alt="#" src="x.jpg"></a> </li>
+		<li>article3 <a name="yame2"><img alt="#" src="x.jpg"></a> </li>
+	</ul>
+	
+</body>
+</html>

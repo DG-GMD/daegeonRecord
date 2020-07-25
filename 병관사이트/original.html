@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text.html; charset=utf-8"/>
+<title> ifram전용 </title>
+<style>
+
+body {
+	background-image:url("background.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+center iframe {
+	border:0px;
+}
+#manual a { 
+	text-decoration:none;
+	color:black;
+	font-size:20px;
+	font-style:"고딕";
+}
+
+#manual a:hover { 
+	color:red;
+	  font-weight:bold;
+	  border-bottom:1px solid red;
+}
+
+#boldtext { font-weight:bold}
+
+#leftMenu { 
+	border-right:1px dotted blue;
+	float:left;
+	width:15%;
+	margin-top:20px;
+}
+
+#rightMenu { 
+	float:right;
+	width:15%;
+}
+
+#rightMenu a {
+	font-style:"고딕";
+	text-decoration:none;
+	font-size:15px;
+	color:black;
+}
+
+#rightMenu a:hover { 
+	font-weight:bold;
+	border-bottom:1px solid red;
+}
+
+
+</style>
+<script type="text/javascript">
+ function Changepage(num){
+ 	var num;
+
+ 	switch(num){
+ 		case 1:{
+ 			document.write("안녕하시오")
+ 		}
+ 	}
+ }
+</script>
+</head>
+<body>
+
+<header>
+<a href="original.html"><img src="logo.jpg"></a>
+<h2>그많데의 비밀공간입니다. </h2>
+<hr>
+</header>
+
+<aside id="rightMenu">
+<p id="sidemanu2"><a href="spring_folder\login.html" target="Framepage"> 로그인 </a></p>
+</aside>
+
+<aside id="leftMenu"> 게시판 
+ <ul id="manual">
+  <li><a href="spring_folder\1.html" target="Framepage"> 1기 </a></li>
+  <li><a href="spring_folder\2.html" target="Framepage"> 2기 </a></li>
+ </ul>
+</aside>
+
+
+<center>
+<iframe src="spring_folder\main.html" height="700" width="1000" name="Framepage"></iframe>
+
+</center>
+
+<audio src="Sleep Away.mp3" type="audio/mp3" autoplay loop>
+
+</body>
+</html>

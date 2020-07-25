@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>SilverFish 우리 동아리만의 은어세계</title>
+
+	<style name="body">
+		body {
+			background:url(Background.jpg) no-repeat right top;
+			background-size:cover;
+			}
+						
+		.Fullsize {
+			clear:both;
+			border:1px dashed green;
+			}
+	</style>
+	
+	<style name="header">
+		header {
+			border:1px dashed black;
+			text-align:left;
+			margin-bottom:1em;
+			height:5em;
+			}
+			
+		.logo {
+			margin-top:1em;
+			text-decoration:none;
+			color:silver;
+			font-size:1.5em;
+			}
+		
+		header h1 {
+			display:inline;
+			}
+			
+		header button {
+			float:right;
+			position:relative;
+			left:-10px;
+			padding:1em;
+			border:7px solid skyblue;
+			background-color:blue;
+			border-radius:100%;
+			color:white;
+			font-size:2em;
+			}
+			
+		header form {
+			position:relative;
+			left:300px;
+			border:0px solid green;
+			float:right;
+			padding:0em 1em;
+			color:rgba(0,0,0,0);
+			margine:0em;
+			font-size:0.9em;
+			}
+			
+		header form:hover {
+			position:absolute;
+			left:1006px;
+			top:9px;
+			border:1px solid green;
+			clear:both;
+			padding:0em 1em 0.5em;
+			color:rgba(0,0,0,1);
+			background-color:white;
+			}
+			
+	</style>
+		
+	<style name="leftMenu">		
+		#leftMenu { 
+			border:1px dashed black;
+			float:left;
+			}
+			
+		#leftMenu td {
+			border:1px solid pink;
+			line-height:0.5;
+			text-align:center;
+			font-size:0.75em;
+			}
+		
+		#leftMenu li {
+			position:relative;
+			left:-1em;
+			margin-top:1em;
+			padding:0.5em 1em;
+			background-color:pink;
+			color:orange;
+			list-style-type:none;
+			}
+		
+		#leftMenu li a{
+			text-decoration:none;
+			}
+			
+		#leftMenu .footImage{
+			margin:3em 1em 0;
+		}
+</style>
+
+	<style name="rightMenu">
+		#rightMenu { 
+			border:1px dashed black;
+			float:right;
+			}
+			
+		#rightMenu ul {
+			}
+				
+		#rightMenu li {
+			position:relative;
+			left:-1em;
+			margin-top:1em;
+			padding:0.5em 1em;
+			background-color:skyblue;
+			color:orange;
+			list-style-type:none;
+			font-size:0.75em;
+			}
+		
+		#rightMenu li a{
+			text-decoration:none;
+			}
+			
+		#rightMenu textarea{
+			width:8em;
+			}
+			
+		#rightMenu textarea,form{
+			margin:0em 1em 0em 2em;
+			}
+	</style>
+
+	<style name="section">		
+		section { 
+			clear:both;
+			display:inline;
+			}
+			
+		section iframe {
+			border:1px solid black;
+			margin:0em 0.1em;
+			position:relative;
+			height:1000px;
+			}
+
+		.none {
+			width:33.5%
+			}
+			
+		.leftIframe {
+			width:67%;
+			}
+			
+		.rightIframe {
+			width:0%;
+			}
+	</style>
+			
+	<style name="footer">
+			
+		footer { 
+			border:1px dashed black;
+			clear:both;
+			}
+	
+	</style>
+
+	<script>
+
+		function login (url){
+			window.open(url,'pop', "width=400, height=500, scrollbars=yes, status=no, location=no")
+			}
+	
+
+		function chat(url){
+			window.open(url,'pop', "width=290, height=230, scrollbars=no, status=no, location=no")
+			}
+	</script>
+	
+	<script>
+	
+		function change1(){
+			window.story.location.href = "homr.html";
+		}	
+		
+		function change2(){
+			window.story.location.href = "https://mirror.enha.kr/wiki/%EA%B0%95%EC%A7%80%EC%98%81";
+		}	
+												
+		function home(){
+			document.getElementById('aaa').onclick=change1;
+			document.getElementById('bbb').onclick=change2;			
+		}
+		window.onload=home;
+		
+	</script>	
+	
+	<script>
+	
+		function change3(){
+			document.getElementById('doom').className = "leftIframe";
+			document.getElementById("duum").className = "rightIframe";	
+		}
+							
+		function change(){
+			var ddd=document.getElementById('bbb');
+			ddd.addEventListener('click',change3,false);
+		}
+			
+		window.addEventListener('load',change,false);
+	
+	</script>
+	
+	<script>
+	
+		function review1(){
+			document.getElementById('doom').className = "none";
+			document.getElementById("duum").className = "none";	
+		}
+						
+		function review(){
+			var ddd=document.getElementById('aaa');
+			ddd.addEventListener('click',review1,false);
+		}
+		
+		window.addEventListener('load',review,false);
+	
+	</script>
+	
+
+</head>
+
+<body>
+
+<div class="Fullsize">
+	<header>
+	
+		<a class="logo" href="#" id="aaa"><h1>SilverFish</h1></a></li>
+		
+		<button type="button"></button>
+		
+		<form class="index" action="#">
+		
+			<p><label for="FF">FriendFishing</label>
+			<input type="text" id="FF"></p>
+			<label for="GF">GroupFishing</label>			
+			<input type="text" id="GF">			
+		
+		</form>
+		
+	</header>
+	
+	<aside id="leftMenu">
+	
+		<table>
+			<tr>
+				<td><img width=150px alt="" src="BMY.jpg"></td>
+				<td>
+					<h1>논산대건고</h1>재학중
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<h1>박민영</h1>고2(17)♂
+				</td>
+				<td>
+					<p>동아리 4개</p>
+					<p>친구 3마리</p>
+					<p><img width=40px alt="" src="admin.jpg">∞pt</p>
+				</td>
+			</tr>
+		</table>
+
+		<fieldset>
+			<legend>내친구</legend>
+			<nav name="Page">
+				<Ul>
+				<div>
+					<li id="bbb"><a href="#"><img width=100px alt="" src="KJY.jpg">강지영</a></li>
+					<li id="#"><a href="#"><img width=100px alt="" src="CIS.jpg">천이슬</a></li>
+					<li id="#"><a href="#"><img width=100px alt="" src="EHN.jpg">하니</a></li>
+				</div>
+				</Ul>
+			</nav>
+		</fieldset>
+		
+		<img class="footImage" width="60px" alt="" src="trashcan.jpg">
+	</aside>
+
+	<aside id="rightMenu">
+		<ul>
+			<li><a href="#">그많데</a></li>
+			<li><a href="#">화르륵</a></li>
+			<li><a href="#">별사탕</a></li>
+			<li><a href="#">웃으면 복이와요.</a></li>
+		</ul>
+ 
+
+
+			<textarea> 메세지가 31개 도착했습니다. </textarea>
+			
+		<form>
+			<input type="button" value="채팅창 ON" onclick="chat('chatRoom.html')">
+		</form>
+	
+	</aside>
+
+	<section>
+		
+		<div>
+		<iframe class="none" id="doom" name="story" src="homr.html"></iframe>
+		<iframe class="none" id="duum" name="widget" src="widget.html"></iframe>
+		</div>
+
+	</section>
+
+	<footer>이 사이트의 저작권은 강석훈에게 있습니다.</footer>	
+</div>
+
+</body>
+</html>

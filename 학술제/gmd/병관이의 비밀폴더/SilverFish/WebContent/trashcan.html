@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	
+	<style type="text/css">
+		
+		li {
+			border:0px solid blue;
+			margin:16px 0em;
+			width:100%;
+			height:250px;
+			list-style:none;
+			radient:1px 20%;
+			border-radius:10px;
+			background-color:skyblue;
+			}
+			
+		.yame1 {
+			opacity:0;
+			}
+			
+		li img {
+			float:right;
+			width:20px;
+			}
+			
+		
+	</style>
+	
+	<style id="table">
+		tr,td,th {
+			border:0px solid black;			
+		}
+		
+		table {
+			height:200px;
+			width:95%;
+			color:black;
+		}
+		
+		th {
+			width:30%;
+		}
+		
+		th img {
+			width:100%
+		}
+		
+		td img {
+			width:100%;
+		}
+		
+		.personal{
+			color:black;
+		}
+		
+		.upline {
+			border-top:1px solid black;
+		}
+	</style>
+		
+	
+	<script>
+	
+		function change1(){
+			document.getElementById("art1").className = "yame1";
+		}
+							
+		function change(){
+			var ddd=document.getElementById('cli1');
+			ddd.addEventListener('click',change1,false);
+		}
+			
+		window.addEventListener('load',change,false);
+	
+	</script>
+
+</head>
+
+<body>
+
+	<ul>
+		<li id="art1" class="yame"><a href="#" id="cli1"><img alt="#" src="fix.jpg"></a> 
+			<table>
+				<tr>
+					<th><img alt="" src="gugugu.jpg"></th>
+					<td class="personal">동아리: 그많데<br>이름: 나재흠<br>2014-12-22 8:14pm</td>
+				</tr>
+				<tr>
+					<td class="upline" rowspan="3" colspan="2">
+						<p><b>게임 만들었다!</b></p>
+						<p><a href="#">For Supo</a></p>
+						<p><b>링크 걸었으니까 해보거라.</b></p>
+					</td>
+				</tr>
+			</table>		
+		</li>
+	</ul>
+	
+</body>
+</html>
